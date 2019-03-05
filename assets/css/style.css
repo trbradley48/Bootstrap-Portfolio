@@ -4,12 +4,22 @@
     background-color: #4aaaa5;
     color: #ffffff;
     padding: 18px 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 
 }
 
 .nav-item {
     text-decoration: none;
+    margin: 0px;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-link {
     font-size: 17px;
     color: #777777;
-    margin: 0px;
 }
