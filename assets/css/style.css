@@ -26,19 +26,47 @@ body {
     margin: 0px;
 }
 
-@media (max-width: 768px) {
+#footerMargins {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #666666;
+    color: #f2f2f2;
+    text-align: center;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 10px;
+    padding-top: 15px;
+    padding-bottom: 1px;
+    border-top: 8px solid #4aaaa5;
+}
+
+/* @media (max-width: 768px) {
     #headerMargin {
         max-width: 768px;
         margin-left: 0px;
         margin-right: 0px;
     }
-}
+} */
 
 @media (max-width: 768px) {
     .meImg {
         display: block;
         width: 100%;
         height: auto;
+    }
+
+    #headerMargin {
+        max-width: 768px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .picBox {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 100%;
+        max-width: 100%;
     }
 }
 
@@ -100,7 +128,7 @@ body {
     background-color: #ffffff;
     border: 1px solid #dddddd;
 }
-#aboutHeader {
+#bodyHeader {
     padding: 10px;
     margin-bottom: 30px;
     border-bottom: 2px solid #cccccc;
@@ -140,3 +168,67 @@ body {
     color: #777777;
     display: inline-block;
 }
+
+.picBox {
+    height: 200px;
+    margin-bottom: 25px;
+    /* margin-right: 25px; */
+    padding-left:0px;
+    padding-right: 0px;
+}
+
+.picLabels {
+    height: 50px;
+    width: 100%;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 50px;
+    margin-top: 135px;
+    text-align: center;
+    padding: auto;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+#Hangman {
+    background-image: url("../images/PortfolioPic1.jpg");
+
+}
+
+#RPG {
+    background-image: url("../images/PortfolioPic2.jpg");
+
+}
+
+#Trivia {
+    background-image: url("../images/PortfolioPic3.jpg");
+
+
+}
+
+#Rutgers {
+    background-image: url("../images/PorftolioPic4.jpg");
+
+
+}
+
+#Rock {
+    background-image: url("../images/PortfolioPic5.jpg");
+
+
+}
+
+/* @media (max-width: 767px) {
+    .picBox {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+} */
+
+/* @media (max-width: 768px) {
+    .picBox {
+
+    }
+} */
