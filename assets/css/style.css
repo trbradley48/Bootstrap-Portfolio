@@ -26,11 +26,28 @@ body {
     margin: 0px;
 }
 
-/* @media (min-width: 1200px) {
-    .container {
-        max-width: 100%;
+@media (max-width: 768px) {
+    #headerMargin {
+        max-width: 768px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
-} */
+}
+
+@media (max-width: 768px) {
+    .meImg {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 769px) {
+    .meImg {
+        width: 200px;
+        height: 200px;
+    }
+}
 
 .whiteBar {
     border-bottom: 2px solid #cccccc;
