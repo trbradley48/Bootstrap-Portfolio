@@ -1,25 +1,11 @@
 
 
-.navbar-brand {
-    /* background-color: #4aaaa5;
-    color: #ffffff;
-    padding: 18px 16px;
-    font-family: Georgia, 'Times New Roman', Times, serif; */
-
-
-}
-
 #navName {
     background-color: #4aaaa5;
     color: #ffffff;
     padding: 18px 16px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-/* .navbar-nav a:hover {
-    background-color: #4aaaa5;
-    color: #ffffff;
-} */
 
 body {
     background-image: url("../images/subtle_grunge.png");
@@ -41,14 +27,8 @@ body {
     border-top: 8px solid #4aaaa5;
 }
 
-/* @media (max-width: 768px) {
-    #headerMargin {
-        max-width: 768px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-} */
 
+/* resize for body of index and portfolio */
 @media (max-width: 768px) {
     .meImg {
         display: block;
@@ -70,6 +50,7 @@ body {
     }
 }
 
+/* resize self image after small size */
 @media (min-width: 769px) {
     .meImg {
         width: 200px;
@@ -94,9 +75,6 @@ body {
 #headerMargin {
     padding: 0px;
     width: 100%;
-    /* margin-left: 0px;
-    margin-right: 0px; */
-    /* display: flex; */
 }
 
 #nameMargin {
@@ -115,12 +93,6 @@ body {
     color: #4aaaa5;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-/* .headerMargin {
-    border-bottom: 2px solid #cccccc;
-    margin-bottom: 35px;
-    background-color: #ffffff;
-} */
 
 .bodyMargins {
     margin: 100px;
@@ -158,7 +130,6 @@ body {
     flex-direction: row;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     margin-top: 10px;
-    /* text-align: center; */
     display: flex;
     justify-content: center;
 }
@@ -172,9 +143,9 @@ body {
 .picBox {
     height: 200px;
     margin-bottom: 25px;
-    /* margin-right: 25px; */
     padding-left:0px;
     padding-right: 0px;
+    background-size: cover;
 }
 
 .picLabels {
@@ -217,21 +188,6 @@ body {
 
 
 }
-
-/* @media (max-width: 767px) {
-    .picBox {
-        flex-grow: 0;
-        flex-shrink: 0;
-        flex-basis: 100%;
-        max-width: 100%;
-    }
-} */
-
-/* @media (max-width: 768px) {
-    .picBox {
-
-    }
-} */
 
 #contactBody {
     width: 100%;
