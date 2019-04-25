@@ -156,6 +156,7 @@ body {
 .btn {
     background-color: #4aaaa5;
     border-color: #4aaaa5;
+    margin-bottom: 5px;
 }
 
 #resumeLink {
@@ -209,7 +210,7 @@ body {
 } */
 
 a {
-    color: white;
+    color: black;
 }
 /* #Hangman {
     background-image: url("../images/PortfolioPic1.jpg");
