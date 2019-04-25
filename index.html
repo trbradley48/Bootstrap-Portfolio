@@ -7,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Bootstrap-Portfolio</title>
 </head>
@@ -14,7 +18,7 @@
 <body>
 
     <!-- White bar for header background -->
-    <div class="whiteBar">
+    <header class="whiteBar">
         <div class="container" id="headerMargin">
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-12" id="nameMargin">
@@ -28,25 +32,32 @@
                 <div class="col-lg-4 col-md-5 col-sm-12" id="navbarMargin">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">About</a> | 
+                            <!-- <a class="nav-link" id="aboutButton" href="#">About</a> | -->
+                            <a class="nav-link" id="aboutButton" href="#aboutSectionHeader">About</a> |
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a> | 
+                            <!-- <a class="nav-link" id="portfolioButton" href="portfolio.html">Portfolio</a> | -->
+                            <a class="nav-link" id="portfolioButton" href="#portfolioSectionHeader">Portfolio</a> |
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <!-- <a class="nav-link" id="contactSection" href="contact.html">Contact</a> -->
+                            <a class="nav-link" id="contactButton" href="#contactSectionHeader">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
+
+    <!-- ================ -->
+    <!-- About Me Section -->
+    <!-- ================ -->
 
     <!-- Margins for body -->
     <div class="containter bodyMargins">
         <div class="row" id="bodyHeader">
-            <h2 class="contentHeader">About Me</h2>
+            <h2 class="contentHeader" id="aboutSectionHeader">About Me</h2>
         </div>
 
         <!-- Row 1 of body -->
@@ -72,7 +83,99 @@
                 were my game of choice.</p>
         </div>
 
+        <!-- Row 2 for link to PDF of Resume -->
+        <div class="row" id="resume">
+            <h2 class="linksHeader">My Accounts</h2>
+        </div>
+        <a href="https://github.com/trbradley48" target="_blank"><img src="assets/images/github-logo.svg" height="30"
+                width="50" /></a>
+        <a href="https://www.facebook.com/taylor.bradley.167?ref=bookmarks" target="_blank"><img
+                src="assets/images/linkedin.svg" height="30" width="50"/></a>
+        <a href="https://www.linkedin.com/in/taylor-bradley-0a5a2211a" target="_blank"><img
+                src="assets/images/facebook.svg" height="30" width="50" /></a>
+
+
+        <!-- ================= -->
+        <!-- Portfolio Section -->
+        <!-- ================= -->
+
+        <div class="row" id="bodyHeader">
+            <h2 class="contentHeader" id="portfolioSectionHeader">Portfolio</h2>
+        </div>
+
+        <!-- Event Hunter card -->
+        <div class="row">
+            <div class="card" id="eventHunter" style="width: 18rem;">
+                <img src="assets/images/Event Hunter SS.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Event Hunter</h5>
+                    <p class="card-text">Find your perfect concert with Event Hunter! JavaScript, JQuery, Ajax, Firebase
+                    </p>
+                    <a href="https://pironj.github.io/Group-Project-1/" target="_blank" class="btn btn-primary">Go to
+                        website</a>
+                </div>
+            </div>
+
+            <!-- Train Scheduler card -->
+            <div class="card" id="trainScheduler" style="width: 18rem;">
+                <img src="assets/images/train icon.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Train Scheduler</h5>
+                    <p class="card-text">Find out when your train is coming next! JavaScript, JQuery, Ajax, Firebase,
+                        Moment.js
+                    </p>
+                    <a href="https://trbradley48.github.io/Train-Scheduler/" target="_blank" class="btn btn-primary">Go
+                        to
+                        website</a>
+                </div>
+            </div>
+
+
+            <div class="card" id="starWars" style="width: 18rem;">
+                <img src="assets/images/star wars.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Star Wars RPG</h5>
+                    <p class="card-text">Choose your Jedi and fight for your life! JavaScript, JQuery, HTML, CSS
+                    </p>
+                    <a href="https://trbradley48.github.io/unit-4-game/" target="_blank" class="btn btn-primary">Go to
+                        website</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- ================ -->
+        <!-- Contact Sections -->
+        <!-- ================ -->
+
+        <div class="row" id="bodyHeader">
+            <h2 class="contentHeader" id="contactSectionHeader">Contact</h2>
+        </div>
+
+        <!-- Row for body of contact -->
+        <div class="row" id="contactBody">
+
+            <div class="col-md-12">
+                <form class="userForm">
+                    <p class="labels">Name</p>
+                    <input class="exampleText" type="text" name="name" placeholder="John Smith">
+                    <br>
+                    <p class="labels">Email</p>
+                    <input class="exampleText" type="text" name="email" placeholder="example@gmail.com">
+                    <br>
+                    <p class="labels">Message</p>
+                    <textarea class="messageInput" type="text" name="message"></textarea>
+                    <br>
+                    <input class="submitButton" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+
     </div>
+
+
 
     <!-- Footer -->
     <footer class="container">
@@ -81,6 +184,7 @@
         </div>
     </footer>
 
+    <script src="assets/app.js"></script>
 </body>
 
 </html>
